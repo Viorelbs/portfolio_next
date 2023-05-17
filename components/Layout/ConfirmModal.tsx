@@ -1,14 +1,13 @@
 import { Button, Dialog } from "@material-tailwind/react";
-import React, { useState } from "react";
+import React from "react";
 
-export default function ConfirmModal() {
-  const [openModal, setOpenModal] = useState(false);
-
-  // Modal Open
-  const handleOpen = () => setOpenModal((cur) => !cur);
-
+interface Props {
+  modalState: boolean;
+  closeModal: () => void;
+}
+export default function ConfirmModal({ modalState, closeModal }: Props) {
   return (
-    <Dialog size="xs" open={openModal} handler={handleOpen}>
+    <Dialog size="xs" open={modalState} handler={() => closeModal()}>
       <div className="flex flex-col bg-white top-0 bottom-0 left-0 right-0 m-auto h-fit absolute gap-8 max-w-xl border p-5 rounded-md">
         <div className="check-container">
           <svg
@@ -44,10 +43,7 @@ export default function ConfirmModal() {
           Vă mulțumim pentru mesajul dumneavoastră. Vă vom răspunde cât mai
           curând posibil. Toate cele bune!{" "}
         </p>
-        <Button
-          className="btn-primary w-fit mx-auto mb-4"
-          onClick={() => setOpenModal(false)}
-        >
+        <Button className="btn-primary w-fit mx-auto mb-4" onClick={closeModal}>
           Inchide
         </Button>
       </div>

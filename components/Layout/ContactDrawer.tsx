@@ -11,6 +11,12 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import { BsArrowRightShort } from "react-icons/bs";
 import Loader from "../Common/Loader";
 import sendContactForm from "@/lib/api";
+import dynamic from "next/dynamic";
+
+// Importing modal for confirmation after email is sent
+const DynamicModal = dynamic(() => import("../Layout/ConfirmModal"), {
+  loading: () => <Loader size={5} />,
+});
 
 const initValues = {
   name: "",
@@ -19,13 +25,18 @@ const initValues = {
 };
 
 export function ContactDrawer({ buttonType }: { buttonType: string }) {
+  // Drawer States
   const [open, setOpen] = React.useState(false);
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
+  // Form States
   const initState = { isLoading: false, error: "", values: initValues };
   const [state, setState] = useState(initState);
   const { values, isLoading, error } = state;
   const [acceptance, setAcceptance] = useState(false);
+  // Modal
+  const [openModal, setOpenModal] = useState(false);
+  const closeModal = () => setOpenModal(false);
 
   // Control form
   const handleChange = (
@@ -42,6 +53,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
 
   // Submit form
   const handleSubmit = async (e: React.FormEvent) => {
+    if (acceptance !== true) return;
     e.preventDefault();
     setState((prev) => ({
       ...prev,
@@ -50,6 +62,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
     try {
       await sendContactForm(values);
       setState(initState);
+      setOpenModal(true);
     } catch (error: any) {
       setState((prev) => ({
         ...prev,
@@ -132,6 +145,9 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
           </Button>
         </form>
       </Drawer>
+      {openModal ? (
+        <DynamicModal modalState={openModal} closeModal={closeModal} />
+      ) : null}
     </>
   );
 }
