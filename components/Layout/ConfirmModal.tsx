@@ -40,8 +40,7 @@ export default function ConfirmModal({ modalState, closeModal }: Props) {
           </svg>
         </div>
         <p className="text-center">
-          Vă mulțumim pentru mesajul dumneavoastră. Vă vom răspunde cât mai
-          curând posibil. Toate cele bune!{" "}
+          Thank you for contacting me! Will respond soon.
         </p>
         <Button className="btn-primary w-fit mx-auto mb-4" onClick={closeModal}>
           Inchide

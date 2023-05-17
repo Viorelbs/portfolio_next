@@ -63,6 +63,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
       await sendContactForm(values);
       setState(initState);
       setOpenModal(true);
+      setOpen(false);
     } catch (error: any) {
       setState((prev) => ({
         ...prev,

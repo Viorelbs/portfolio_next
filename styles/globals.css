@@ -96,14 +96,14 @@ body {
 .svg-success .success-circle-outline {
   fill: none;
   stroke-width: 1px;
-  stroke: #81c038;
+  stroke: #3178c6;
   stroke-dasharray: 72px, 72px;
   stroke-dashoffset: 72px;
   animation: success-circle-outline 300ms ease-in-out 800ms forwards;
   opacity: 0;
 }
 .svg-success .success-circle-fill {
-  fill: #81c038;
+  fill: #3178c6;
   stroke: none;
   opacity: 0;
   animation: success-circle-fill 300ms ease-out 1100ms forwards;
