@@ -4,7 +4,7 @@ import cssIcon from "../public/assets/svg_icons/css-file-format-document-extensi
 import htmlIcon from "../public/assets/svg_icons/html5-svgrepo-com.svg";
 import figmaIcon from "../public/assets/svg_icons/figma-svgrepo-com.svg";
 import phpIcon from "../public/assets/svg_icons/php-svgrepo-com.svg";
-import javaScriptIcon from "../public/assets/svg_icons/JavaScript-fill-svgrepo-com.svg";
+import javaScriptIcon from "../public/assets/svg_icons/javascript-fill-svgrepo-com.svg";
 import reduxIcon from "../public/assets/svg_icons/redux.svg";
 import tailwind from "../public/assets/svg_icons/tailwind.svg";
 import mui from "../public/assets/svg_icons/mui.svg";
