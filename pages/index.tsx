@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <main>
       <motion.div className="progress-bar" style={{ scaleX }} />
-      {/* <ContactDrawer buttonType="secondary" /> */}
       <div className="flex">
         <Navbar />
         <div className=" space-y-40 flex-[8]">
