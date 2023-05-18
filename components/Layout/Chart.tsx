@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import * as echarts from "echarts";
-import Typed from "react-typed";
 
 export default function Chart() {
   const chartRef = useRef<HTMLDivElement | null>(null);
@@ -48,17 +47,7 @@ export default function Chart() {
   }, []);
 
   return (
-    <div className="flex flex-[2] flex-col items-center">
-      <h2 className="text-3xl bg-secondary p-4 rounded-xl">
-        {
-          <Typed
-            strings={["My skillset"]}
-            typeSpeed={20}
-            backSpeed={30}
-            loop={false}
-          />
-        }
-      </h2>
+    <div className="flex grow flex-col items-center">
       <div ref={chartRef} style={{ width: "100%", height: "400px" }} />
     </div>
   );
