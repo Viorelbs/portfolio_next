@@ -1,5 +1,4 @@
 import React from "react";
-import Typed from "react-typed";
 import { ContactDrawer } from "./ContactDrawer";
 import BackgroundIcons from "./BackgroundIcons";
 import { motion } from "framer-motion";
