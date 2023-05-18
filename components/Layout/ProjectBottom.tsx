@@ -7,7 +7,6 @@ interface Props {
   technologies: object[];
 }
 export default function ProjectBottom({ roles, technologies }: Props) {
-  console.log(technologies);
   return (
     <div className="flex flex-wrap mt-4 gap-8">
       <div className="flex gap-3 text-lg">

@@ -173,7 +173,7 @@ body {
   opacity: 0;
 }
 .svg-success .success-circle-fill {
-  fill: #3178c6;
+  fill: #ff5c00;
   stroke: none;
   opacity: 0;
   animation: success-circle-fill 300ms ease-out 1100ms forwards;
@@ -223,7 +223,7 @@ body {
   right: 0;
   height: 5px;
   z-index: 999;
-  background: #3178c6;
+  background: #ff5c00;
   transform-origin: 0%;
 }
 

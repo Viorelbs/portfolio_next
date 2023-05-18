@@ -12,6 +12,7 @@ export default function Home() {
     damping: 30,
     restDelta: 0.001,
   });
+
   return (
     <main>
       <motion.div className="progress-bar" style={{ scaleX }} />

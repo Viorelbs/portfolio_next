@@ -6,7 +6,7 @@ import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-[10vh] flex-1 bg-secondary items-center px-2 py-10 flex flex-col justify-between mx-10 my-6 rounded-xl h-fit min-h-[80vh] ">
+    <div className="sticky top-[10vh] flex-1 bg-secondary items-center px-2 py-10 flex flex-col justify-between mx-10 my-6 rounded-xl h-fit min-h-[80vh] z-50 ">
       <Image
         src={avatarImg.src}
         alt="avatar"
@@ -16,9 +16,9 @@ export default function Navbar() {
       />
 
       <div className="flex flex-col gap-3">
-        <Link href="#hero">Home</Link>
-        <Link href="#aboutme">About me</Link>
-        <Link href="#projectssection">Portfolio</Link>
+        <a href="#hero">Home</a>
+        <a href="#aboutme">About me</a>
+        <a href="#projectssection">Portfolio</a>
       </div>
 
       <div className="flex space-x-2">

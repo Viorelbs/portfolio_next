@@ -4,10 +4,8 @@ import ProjectView from "./ProjectView";
 import { ProjectsImages } from "@/data/data";
 
 export default function Projects() {
-  console.log(ProjectsImages);
   return (
     <div>
-      {" "}
       <div id="projectssection" className="title">
         <TitleAnimation title="Some of the projects I took part in" />
       </div>

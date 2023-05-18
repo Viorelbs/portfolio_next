@@ -26,7 +26,7 @@ export default function Chart() {
         type: "value",
       },
       tooltip: "true",
-      color: ["#3178C6"],
+      color: ["#FF5C00"],
       textStyle: {
         color: "#fff",
       },

@@ -3,6 +3,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 interface Props {
   link?: string;
@@ -32,12 +33,38 @@ export default function ProjectTop({
           <span>{title}</span>
         )}
       </div>
-      <div className="col-start-2 col-end-7">
+      <motion.div
+        className="col-start-2 col-end-7"
+        variants={{
+          beforeAnimation: {
+            y: 200,
+          },
+          afterAnimation: {
+            y: 0,
+          },
+        }}
+        transition={{ duration: 0.5 }}
+        initial="beforeAnimation"
+        whileInView="afterAnimation"
+      >
         <Image src={macFrame} alt={title} className="mx-auto" />
-      </div>
-      <div className="col-start-7 col-end-8 justify-center flex items-center">
+      </motion.div>
+      <motion.div
+        className="col-start-7 col-end-8 justify-center flex items-center"
+        variants={{
+          beforeAnimation: {
+            x: 200,
+          },
+          afterAnimation: {
+            x: 0,
+          },
+        }}
+        transition={{ duration: 0.5 }}
+        initial="beforeAnimation"
+        whileInView="afterAnimation"
+      >
         <Image src={phoneFrame} alt={title} className="lg:max-w-[190px]" />
-      </div>
+      </motion.div>
     </div>
   );
 }
