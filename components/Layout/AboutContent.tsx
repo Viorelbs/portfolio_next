@@ -16,8 +16,10 @@ import Image from "next/image";
 export default function AboutContent() {
   return (
     <div>
-      <h3 className="text-3xl mb-2">I'm a web developer and UI/UX designer</h3>
-      <p className="font-light text-gray-500">
+      <h3 className="text-3xl mb-2 font-medium">
+        I'm a web developer and UI/UX designer
+      </h3>
+      <p className="font-normal text-lg text-gray-500">
         with 2 years of experience, on a mission to create beautiful and
         user-friendly experiences. I work with React,NextJs,JavaScript,
         TypeScript, CSS, HTML. Let's make your website shine!

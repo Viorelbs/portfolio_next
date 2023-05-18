@@ -10,8 +10,8 @@ export default function Navbar() {
       <Image
         src={avatarImg.src}
         alt="avatar"
-        width={70}
-        height={70}
+        width={90}
+        height={90}
         className="rounded-full"
       />
 

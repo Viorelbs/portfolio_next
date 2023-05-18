@@ -1,7 +1,6 @@
 import React from "react";
 import Chart from "./Chart";
-import Typed from "react-typed";
-import TitleAnimation from "./TitleAnimation";
+import TitleAnimation from "../Common/TitleAnimation";
 import AboutContent from "./AboutContent";
 
 export default function About() {

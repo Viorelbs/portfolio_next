@@ -2,6 +2,7 @@ import About from "@/components/Layout/About";
 import { ContactDrawer } from "@/components/Layout/ContactDrawer";
 import Hero from "@/components/Layout/Hero";
 import Navbar from "@/components/Layout/Navbar";
+import Projects from "@/components/Layout/Projects";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <div className=" space-y-40 flex-[8]">
           <Hero />
           <About />
+          <Projects />
         </div>
       </div>
     </main>
