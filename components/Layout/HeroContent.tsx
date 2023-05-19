@@ -2,8 +2,10 @@ import React from "react";
 import { ContactDrawer } from "./ContactDrawer";
 import BackgroundIcons from "./BackgroundIcons";
 import { motion } from "framer-motion";
+import useWidth from "@/hooks/useWidth";
 
 export default function HeroContent() {
+  const { windowWidth } = useWidth();
   return (
     <div className="relative min-h-[90vh] grid place-content-center hero mx-4">
       <div className="bg-secondary p-6 rounded-xl">
@@ -19,7 +21,7 @@ export default function HeroContent() {
           initial="initial"
           animate="normal"
           transition={{
-            duration: 1,
+            duration: 0.5,
           }}
         >
           <h1 className="text-3xl font-medium">
@@ -32,7 +34,7 @@ export default function HeroContent() {
       </div>
 
       <ContactDrawer buttonType="primary" />
-      <BackgroundIcons />
+      {windowWidth > 960 ? <BackgroundIcons /> : null}
     </div>
   );
 }

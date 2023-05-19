@@ -88,7 +88,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
         initial="initial"
         animate="normal"
         transition={{
-          duration: 1,
+          duration: 0.5,
         }}
       >
         {buttonType === "primary" ? (

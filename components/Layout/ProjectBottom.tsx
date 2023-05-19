@@ -9,7 +9,7 @@ interface Props {
 export default function ProjectBottom({ roles, technologies }: Props) {
   return (
     <div className="flex flex-wrap mt-4 gap-4 lg:gap-8">
-      <div className="flex gap-3 text-lg">
+      <div className="flex gap-3 text-lg flex-wrap">
         <strong className="text-gray-400">Role:</strong>
         {roles.map((role, idx) => (
           <span className="text-primary font-medium" key={idx}>

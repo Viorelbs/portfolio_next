@@ -48,7 +48,7 @@ export default function Chart() {
 
   return (
     <div className="flex grow flex-col items-center">
-      <div ref={chartRef} style={{ width: "100%", height: "400px" }} />
+      <div ref={chartRef} style={{ width: "100%", height: "300px" }} />
     </div>
   );
 }
