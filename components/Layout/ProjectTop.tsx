@@ -36,22 +36,9 @@ export default function ProjectTop({
           <span>{title}</span>
         )}
       </div>
-      <motion.div
-        className="lg:col-start-2 lg:col-end-7 mt-4 lg:mt-0"
-        variants={{
-          beforeAnimation: {
-            y: 200,
-          },
-          afterAnimation: {
-            y: 0,
-          },
-        }}
-        transition={{ duration: 0.2 }}
-        initial="beforeAnimation"
-        whileInView="afterAnimation"
-      >
+      <div className="lg:col-start-2 lg:col-end-7 mt-4 lg:mt-0">
         <Image src={macFrame} alt={title} className="mx-auto" />
-      </motion.div>
+      </div>
       {windowWidth > 960 ? (
         <motion.div
           className="col-start-7 col-end-8 justify-center flex items-center"
