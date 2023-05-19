@@ -49,7 +49,7 @@ export default function Chart() {
   }, []);
 
   return (
-    <div className="flex grow flex-col items-center flex-1">
+    <div className="flex grow flex-col items-center flex-1 w-full">
       <div ref={chartRef} style={{ width: "100%", height: "300px" }} />
     </div>
   );
