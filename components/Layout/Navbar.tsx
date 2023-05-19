@@ -19,7 +19,7 @@ export default function Navbar() {
         alt="avatar"
         width={90}
         height={90}
-        className="rounded-full"
+        className="rounded-full w-[90px] h-[90px]"
       />
 
       <div className="flex flex-col gap-3">

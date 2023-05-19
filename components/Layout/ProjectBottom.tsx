@@ -25,7 +25,7 @@ export default function ProjectBottom({ roles, technologies }: Props) {
               src={Object.values(tech)[0].src}
               width={40}
               height={40}
-              className="max-h-[30px] hover:scale-110 transition-all duration-300 cursor-pointer"
+              className="max-h-[30px] max-w-[30px] hover:scale-110 transition-all duration-300 cursor-pointer"
               alt={Object.keys(tech).join(",")}
             />
           </Tooltip>

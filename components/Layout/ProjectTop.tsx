@@ -54,7 +54,11 @@ export default function ProjectTop({
           initial="beforeAnimation"
           whileInView="afterAnimation"
         >
-          <Image src={phoneFrame} alt={title} className="lg:max-w-[190px]" />
+          <Image
+            src={phoneFrame}
+            alt={title}
+            className="lg:max-w-[190px] h-fit"
+          />
         </motion.div>
       ) : null}
     </div>
