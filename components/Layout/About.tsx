@@ -10,7 +10,7 @@ export default function About() {
       <TitleAnimation title="Who is this guy?" />
       <div
         id="aboutme"
-        className="flex flex-wrap items-center max-w-[1700px] lg:mx-auto mx-4"
+        className="flex flex-wrap flex-col md:flex-row items-center max-w-[1700px] lg:mx-auto mx-4"
       >
         <motion.div
           className="flex-1"
