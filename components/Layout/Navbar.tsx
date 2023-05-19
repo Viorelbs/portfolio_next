@@ -46,7 +46,7 @@ export default function Navbar() {
     <>
       <RiMenu2Line
         onClick={openDrawer}
-        className="fixed top-[5vh] left-4 z-50 w-8 h-8 cursor-pointer bg-primary text-black p-2 rounded-xl"
+        className="fixed top-[6vh] left-4 z-50 w-8 h-8 cursor-pointer bg-primary text-black p-2 rounded-xl"
       />
       <Drawer
         open={open}
