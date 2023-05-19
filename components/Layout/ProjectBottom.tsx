@@ -17,7 +17,7 @@ export default function ProjectBottom({ roles, technologies }: Props) {
           </span>
         ))}
       </div>
-      <div className="flex gap-3 text-lg items-center">
+      <div className="flex flex-wrap gap-3 text-lg items-center">
         <strong className="text-gray-400">Technologies:</strong>
         {technologies.map((tech, idx) => (
           <Tooltip key={idx} content={Object.keys(tech)}>
