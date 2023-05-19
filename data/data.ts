@@ -15,6 +15,9 @@ import firebaseIcon from "../public/assets/svg_icons/firebase.svg";
 import stripeIcon from "../public/assets/svg_icons/stripe.svg";
 import git from "../public/assets/svg_icons/git.svg";
 import recoil from "../public/assets/svg_icons/recoil.svg";
+import strapi from "../public/assets/svg_icons/Strapi.logo-Dark.Background.svg";
+import graphql from "../public/assets/svg_icons/GraphQL_Logo.svg.png";
+import jquery from "../public/assets/svg_icons/jquery-ar21.svg";
 
 // Pages import
 import castingMac from "../public/assets/images/casting/CastingMac.webp";
@@ -62,7 +65,7 @@ export const ProjectsImages = [
     technologies: [
       { Git: git },
       { Firebase: firebaseIcon },
-      { stripe: stripeIcon },
+      { Stripe: stripeIcon },
       { TypeScript: tsIcon },
       { React: reactIcon },
       { NextJS: nextIcon },
@@ -110,6 +113,7 @@ export const ProjectsImages = [
     technologies: [
       { Figma: figmaIcon },
       { JavaScript: javaScriptIcon },
+      { jQuery: jquery },
       { PHP: phpIcon },
       { Boostrap: bootstrap },
       { HTML: htmlIcon },
@@ -146,6 +150,8 @@ export const ProjectsImages = [
     contribution: 43,
     technologies: [
       { JavaScript: javaScriptIcon },
+      { jQuery: jquery },
+
       { PHP: phpIcon },
       { Boostrap: bootstrap },
       { HTML: htmlIcon },
@@ -165,7 +171,7 @@ export const ProjectsImages = [
       { Git: git },
 
       { React: reactIcon },
-      { redux: reduxIcon },
+      { Redux: reduxIcon },
       { JavaScript: javaScriptIcon },
       { MUI: mui },
       { HTML: htmlIcon },
@@ -200,6 +206,7 @@ export const ProjectsImages = [
     technologies: [
       { Figma: figmaIcon },
       { JavaScript: javaScriptIcon },
+      { jQuery: jquery },
       { PHP: phpIcon },
       { Boostrap: bootstrap },
       { HTML: htmlIcon },
@@ -215,9 +222,9 @@ export const ProjectsImages = [
     roles: ["Front-end development"],
     technologies: [
       { JavaScript: javaScriptIcon },
+      { jQuery: jquery },
       { PHP: phpIcon },
       { Boostrap: bootstrap },
-
       { HTML: htmlIcon },
       { CSS: cssIcon },
     ],
@@ -231,10 +238,65 @@ export const ProjectsImages = [
     roles: ["Front-end development"],
     technologies: [
       { JavaScript: javaScriptIcon },
+      { jQuery: jquery },
+
       { PHP: phpIcon },
       { Boostrap: bootstrap },
       { HTML: htmlIcon },
       { CSS: cssIcon },
     ],
+  },
+];
+
+export const logos = [
+  {
+    TypeScript: tsIcon,
+  },
+  {
+    NextJS: nextIcon,
+  },
+  {
+    React: reactIcon,
+  },
+  {
+    JavaScript: javaScriptIcon,
+  },
+  {
+    Tailwind: tailwind,
+  },
+  {
+    Firebase: firebaseIcon,
+  },
+  {
+    Strapi: strapi,
+  },
+  {
+    CSS: cssIcon,
+  },
+  {
+    HTML: htmlIcon,
+  },
+
+  {
+    Figma: figmaIcon,
+  },
+
+  {
+    Stripe: stripeIcon,
+  },
+  {
+    Git: git,
+  },
+  {
+    Redux: reduxIcon,
+  },
+  {
+    Recoil: recoil,
+  },
+  {
+    MUI: mui,
+  },
+  {
+    GraphQL: graphql,
   },
 ];

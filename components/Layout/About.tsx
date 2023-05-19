@@ -8,7 +8,10 @@ export default function About() {
   return (
     <div>
       <TitleAnimation title="Who is this guy?" />
-      <div id="aboutme" className="grid grid-cols-2 items-center">
+      <div
+        id="aboutme"
+        className="grid grid-cols-2 items-center max-w-[1700px] mx-auto"
+      >
         <motion.div
           variants={{
             beforeAnimation: {

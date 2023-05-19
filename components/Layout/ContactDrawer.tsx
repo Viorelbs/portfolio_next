@@ -112,7 +112,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
         open={open}
         onClose={closeDrawer}
         placement="right"
-        className="bg-secondary md:min-w-[300px] "
+        className="bg-secondary md:min-w-[300px]"
       >
         <div className="mb-2 flex items-center justify-between p-4 ">
           <h5 className="text-white">Contact Me</h5>

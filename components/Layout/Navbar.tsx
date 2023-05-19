@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import avatarImg from "../../public/assets/images/avatar.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { RiMenu2Line } from "react-icons/ri";
+import useWidth from "@/hooks/useWidth";
+import { Drawer } from "@material-tailwind/react";
 
 export default function Navbar() {
-  return (
-    <div className="sticky top-[10vh] flex-1 bg-secondary items-center px-2 py-10 flex flex-col justify-between mx-10 my-6 rounded-xl h-fit min-h-[80vh] z-50 ">
+  const { windowWidth } = useWidth();
+  const [open, setOpen] = useState(false);
+  const openDrawer = () => setOpen(true);
+  const closeDrawer = () => setOpen(false);
+
+  const nav = (
+    <div className="lg:sticky top-[10vh] lg:flex-1 bg-secondary items-center px-2 py-10 flex flex-col justify-between  my-6 rounded-xl h-fit min-h-[80vh] z-50 w-[140px] ">
       <Image
         src={avatarImg.src}
         alt="avatar"
@@ -34,4 +42,17 @@ export default function Navbar() {
       </div>
     </div>
   );
+
+  const mobile = (
+    <>
+      <RiMenu2Line
+        onClick={openDrawer}
+        className="fixed top-[5vh] left-4 z-50 w-6 h-6"
+      />
+      <Drawer open={open} onClose={closeDrawer} className="p-4 bg-transparent">
+        {nav}
+      </Drawer>
+    </>
+  );
+  return windowWidth < 960 ? mobile : <div className="mx-10">{nav}</div>;
 }

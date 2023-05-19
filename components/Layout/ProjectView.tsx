@@ -55,6 +55,7 @@ export default function ProjectView({
           </Link>
         ) : null}
       </div>
+      <p className="mt-4 opacity-90 max-w-[1000px]">{description}</p>
       <ProjectBottom roles={roles} technologies={technologies} />
       {inView ? <DynamicContributionBar contribution={contribution} /> : null}
     </div>

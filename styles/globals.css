@@ -107,10 +107,11 @@ body {
   }
 }
 /* Fixing offset */
-.hero .backdrop-blur-sm {
+main .backdrop-blur-sm {
   left: -20vw;
-  height: 200vh;
-  width: 120vw;
+  height: 100vh;
+  position: fixed;
+  width: 200vw;
 }
 
 /* Check animation */

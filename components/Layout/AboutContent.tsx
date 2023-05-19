@@ -1,17 +1,7 @@
 import React from "react";
-import tailwindIcon from "../../public/assets/svg_icons/tailwind.svg";
-import firebaseIcon from "../../public/assets/svg_icons/firebase.svg";
-import cssIcon from "../../public/assets/svg_icons/css-file-format-document-extension-file-format-svgrepo-com.svg";
-import htmlIcon from "../../public/assets/svg_icons/html5-svgrepo-com.svg";
-import reactIcon from "../../public/assets/svg_icons/react-logo-programming-svgrepo-com.svg";
-import figmaIcon from "../../public/assets/svg_icons/figma-svgrepo-com.svg";
-import javaScriptIcon from "../../public/assets/svg_icons/javascript-fill-svgrepo-com.svg";
-import tsIcon from "../../public/assets/svg_icons/ts.svg";
-import nextIcon from "../../public/assets/svg_icons/next.svg";
-import stripeIcon from "../../public/assets/svg_icons/stripe.svg";
-import git from "../../public/assets/svg_icons/git.svg";
-import recoil from "../../public/assets/svg_icons/recoil.svg";
 import Image from "next/image";
+import { Tooltip } from "@material-tailwind/react";
+import { logos } from "@/data/data";
 
 export default function AboutContent() {
   return (
@@ -25,90 +15,17 @@ export default function AboutContent() {
         TypeScript, CSS, HTML. Let's make your website shine!
       </p>
       <div className="flex gap-4 flex-wrap mt-6">
-        <Image
-          src={reactIcon}
-          width={40}
-          height={40}
-          alt="react icon"
-          className="tech-icon"
-        />
-        <Image
-          src={tsIcon}
-          width={40}
-          height={40}
-          alt="Typescript icon"
-          className="tech-icon"
-        />
-        <Image
-          width={40}
-          height={40}
-          src={nextIcon}
-          alt="nextjs icon"
-          className="tech-icon"
-        />
-        <Image
-          src={tailwindIcon}
-          width={40}
-          height={40}
-          alt="tailwind icon"
-          className="tech-icon"
-        />
-        <Image
-          src={git}
-          alt="html icon"
-          width={40}
-          height={40}
-          className="tech-icon"
-        />
-        <Image
-          alt="javascript icon"
-          src={javaScriptIcon}
-          width={40}
-          height={40}
-          className="tech-icon"
-        />
-        <Image
-          src={figmaIcon}
-          alt="figma icon"
-          width={40}
-          height={40}
-          className="tech-icon"
-        />
-        <Image
-          src={firebaseIcon}
-          alt="firebase icon"
-          width={40}
-          height={40}
-          className="tech-icon"
-        />
-        <Image
-          src={cssIcon}
-          alt="css icon"
-          width={40}
-          height={40}
-          className="tech-icon"
-        />
-        <Image
-          src={htmlIcon}
-          alt="html icon"
-          width={40}
-          height={40}
-          className="tech-icon"
-        />
-        <Image
-          src={stripeIcon}
-          alt="html icon"
-          width={40}
-          height={40}
-          className="tech-icon"
-        />
-        <Image
-          src={recoil}
-          alt="html icon"
-          width={15}
-          height={20}
-          className="tech-icon"
-        />
+        {logos.map((logo, idx) => (
+          <Tooltip key={idx} content={Object.keys(logo)}>
+            <Image
+              src={Object.values(logo)[0].src}
+              width={35}
+              height={35}
+              alt={Object.keys(logo).join(",")}
+              className="tech-icon max-h-[35px] max-w-[35px]"
+            />
+          </Tooltip>
+        ))}
       </div>
     </div>
   );
