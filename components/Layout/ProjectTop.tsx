@@ -21,8 +21,8 @@ export default function ProjectTop({
 }: Props) {
   const { windowWidth } = useWidth();
   return (
-    <div className="grid  grid-cols-7 mr-[5vw]">
-      <div className="col-start-1 col-end-2 rotate-90 whitespace-nowrap w-fit h-full flex items-center justify-center m-auto text-primary font-medium text-lg">
+    <div className="flex flex-col lg:grid  lg:grid-cols-7 mr-[5vw]">
+      <div className="row-start-1 row-end-2 col-start-1 lg:col-end-2 lg:rotate-90 whitespace-nowrap w-fit h-full flex items-center justify-center m-auto text-primary font-medium text-lg">
         {link ? (
           <Link
             href={link}
@@ -37,7 +37,7 @@ export default function ProjectTop({
         )}
       </div>
       <motion.div
-        className="col-start-2 col-end-7"
+        className="lg:col-start-2 lg:col-end-7 mt-4 lg:mt-0"
         variants={{
           beforeAnimation: {
             y: 200,

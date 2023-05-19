@@ -27,21 +27,7 @@ export default function About() {
         >
           <AboutContent />
         </motion.div>
-        <motion.div
-          variants={{
-            beforeAnimation: {
-              x: 200,
-            },
-            afterAnimation: {
-              x: 0,
-            },
-          }}
-          transition={{ duration: 0.5 }}
-          initial="beforeAnimation"
-          whileInView="afterAnimation"
-        >
-          <Chart />
-        </motion.div>
+        <Chart />
       </div>
     </div>
   );
