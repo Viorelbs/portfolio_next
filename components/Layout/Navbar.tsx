@@ -12,9 +12,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
-
+  console.log(windowWidth);
   const nav = (
-    <div className="lg:sticky top-[10vh] lg:flex-1 bg-secondary items-center px-2 py-10 flex flex-col justify-between  my-6 rounded-xl h-fit min-h-[80vh] z-50 w-[140px] ">
+    <div className="lg:sticky top-[10vh] lg:flex-1 bg-secondary items-center px-2 py-10 flex flex-col justify-between my-6 rounded-xl h-fit min-h-[80vh] z-50 w-[140px] ">
       <Image
         src={avatarImg.src}
         alt="avatar"
@@ -47,7 +47,7 @@ export default function Navbar() {
     <>
       <RiMenu2Line
         onClick={openDrawer}
-        className="fixed top-[5vh] left-4 z-50 w-6 h-6"
+        className="fixed top-[5vh] left-4 z-50 w-8 h-8 cursor-pointer bg-primary text-black p-2 rounded-xl"
       />
       <Drawer open={open} onClose={closeDrawer} className="p-4 bg-transparent">
         {nav}

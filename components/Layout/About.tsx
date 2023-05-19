@@ -10,7 +10,7 @@ export default function About() {
       <TitleAnimation title="Who is this guy?" />
       <div
         id="aboutme"
-        className="grid grid-cols-2 items-center max-w-[1700px] mx-auto"
+        className="grid lg:grid-cols-2 items-center max-w-[1700px] lg:mx-auto mx-4"
       >
         <motion.div
           variants={{

@@ -34,14 +34,14 @@ export default function ProjectView({
   });
 
   return (
-    <div className="my-32" ref={ref}>
+    <div className="my-16 lg:my-32 mx-4" ref={ref}>
       <ProjectTop
         title={title}
         link={link}
         macFrame={macFrame}
         phoneFrame={phoneFrame}
       />
-      <div className="flex gap-3">
+      <div className="flex gap-3 mt-4">
         {personalProject ? (
           <Chip
             variant="outlined"

@@ -94,7 +94,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
         {buttonType === "primary" ? (
           <button
             onClick={openDrawer}
-            className="flex items-center text-lg gap-2 text-primary mt-2 group"
+            className="flex items-center text-lg gap-2 text-primary mt-2 group font-semibold"
           >
             Contact Me
             <BsArrowRightShort className="w-5 h-5 relative left-0 group-hover:left-2 transition-all duration-300" />
@@ -102,7 +102,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
         ) : (
           <button
             onClick={openDrawer}
-            className=" py-3 px-5 rounded-xl text-white text-sm gap-2 font-light bg-primary normal-case	tracking-widest fixed right-[2vw] top-[5vh] z-10 hover:bg-orange-700 "
+            className=" py-3 px-5 rounded-xl text-black text-sm gap-2 font-medium bg-primary normal-case	tracking-widest fixed right-[2vw] top-[5vh] z-10 hover:bg-orange-700 "
           >
             Contact Me
           </button>

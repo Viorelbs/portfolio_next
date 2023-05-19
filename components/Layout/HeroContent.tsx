@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function HeroContent() {
   return (
-    <div className="relative min-h-[90vh] grid place-content-center hero">
+    <div className="relative min-h-[90vh] grid place-content-center hero mx-4">
       <div className="bg-secondary p-6 rounded-xl">
         <motion.div
           variants={{

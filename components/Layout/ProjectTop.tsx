@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import useWidth from "@/hooks/useWidth";
 
 interface Props {
   link?: string;
@@ -11,12 +12,14 @@ interface Props {
   macFrame: StaticImageData;
   phoneFrame: StaticImageData;
 }
+
 export default function ProjectTop({
   link,
   title,
   macFrame,
   phoneFrame,
 }: Props) {
+  const { windowWidth } = useWidth();
   return (
     <div className="grid  grid-cols-7 mr-[5vw]">
       <div className="col-start-1 col-end-2 rotate-90 whitespace-nowrap w-fit h-full flex items-center justify-center m-auto text-primary font-medium text-lg">
@@ -49,22 +52,24 @@ export default function ProjectTop({
       >
         <Image src={macFrame} alt={title} className="mx-auto" />
       </motion.div>
-      <motion.div
-        className="col-start-7 col-end-8 justify-center flex items-center"
-        variants={{
-          beforeAnimation: {
-            x: 200,
-          },
-          afterAnimation: {
-            x: 0,
-          },
-        }}
-        transition={{ duration: 0.5 }}
-        initial="beforeAnimation"
-        whileInView="afterAnimation"
-      >
-        <Image src={phoneFrame} alt={title} className="lg:max-w-[190px]" />
-      </motion.div>
+      {windowWidth > 960 ? (
+        <motion.div
+          className="col-start-7 col-end-8 justify-center flex items-center"
+          variants={{
+            beforeAnimation: {
+              x: 200,
+            },
+            afterAnimation: {
+              x: 0,
+            },
+          }}
+          transition={{ duration: 0.5 }}
+          initial="beforeAnimation"
+          whileInView="afterAnimation"
+        >
+          <Image src={phoneFrame} alt={title} className="lg:max-w-[190px]" />
+        </motion.div>
+      ) : null}
     </div>
   );
 }
