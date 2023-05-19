@@ -21,6 +21,7 @@ export default function Chart() {
           "HTML",
           "Figma",
         ],
+        axisLabel: { interval: 0, rotate: -90 },
       },
       yAxis: {
         type: "value",
@@ -30,6 +31,7 @@ export default function Chart() {
       textStyle: {
         color: "#fff",
       },
+
       series: [
         {
           data: [68, 54, 74, 58, 84, 87, 90, 100],
@@ -47,7 +49,7 @@ export default function Chart() {
   }, []);
 
   return (
-    <div className="flex grow flex-col items-center">
+    <div className="flex grow flex-col items-center flex-1">
       <div ref={chartRef} style={{ width: "100%", height: "300px" }} />
     </div>
   );
