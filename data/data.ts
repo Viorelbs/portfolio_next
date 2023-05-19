@@ -26,9 +26,6 @@ import castingPhone from "../public/assets/images/casting/CastingPhone.webp";
 import recoMac from "../public/assets/images/reco/recoMac.webp";
 import recoPhone from "../public/assets/images/reco/recoPhone.webp";
 
-import noteMac from "../public/assets/images/note/noteMac.webp";
-import notePhone from "../public/assets/images/note/notePhone.webp";
-
 import lantaniaMac from "../public/assets/images/2lafel/2lafelMac.webp";
 import lantaniaPhone from "../public/assets/images/2lafel/2lafelPhone.webp";
 
@@ -104,6 +101,26 @@ export const ProjectsImages = [
     ],
   },
   {
+    title: "Portfolio Website",
+    macFrame: portfolioMac,
+    phoneFrame: portfolioPhone,
+    personalProject: true,
+    roles: ["Ux/ui design", "Front-end development"],
+    gitLink: "https://github.com/ViorelMG5/portfolio_next",
+
+    contribution: 100,
+    technologies: [
+      { Git: git },
+      { TailwindCSS: tailwind },
+      { React: reactIcon },
+      { NextJS: nextIcon },
+      { JavaScript: javaScriptIcon },
+      { TypeScript: tsIcon },
+      { HTML: htmlIcon },
+      { CSS: cssIcon },
+    ],
+  },
+  {
     macFrame: castingMac,
     phoneFrame: castingPhone,
     title: "Agentia de Casting",
@@ -126,7 +143,6 @@ export const ProjectsImages = [
     title: "Tv recommendation",
     personalProject: true,
     gitLink: "https://github.com/ViorelMG5/recommended_tv_shows",
-
     link: "https://recommended-tv-shows.vercel.app/",
     roles: ["Ux/ui design", "Front-end development"],
     contribution: 100,
@@ -151,51 +167,13 @@ export const ProjectsImages = [
     technologies: [
       { JavaScript: javaScriptIcon },
       { jQuery: jquery },
-
       { PHP: phpIcon },
       { Boostrap: bootstrap },
       { HTML: htmlIcon },
       { CSS: cssIcon },
     ],
   },
-  {
-    macFrame: noteMac,
-    phoneFrame: notePhone,
-    personalProject: true,
-    title: "Note Manager",
-    roles: ["Ux/ui design", "Front-end development"],
-    contribution: 100,
-    gitLink: "https://github.com/ViorelMG5/react-notes-manager",
-    technologies: [
-      // { Figma: figmaIcon },
-      { Git: git },
 
-      { React: reactIcon },
-      { Redux: reduxIcon },
-      { JavaScript: javaScriptIcon },
-      { MUI: mui },
-      { HTML: htmlIcon },
-      { CSS: cssIcon },
-    ],
-  },
-  {
-    title: "Portfolio Website",
-    macFrame: portfolioMac,
-    phoneFrame: portfolioPhone,
-    personalProject: true,
-    roles: ["Ux/ui design", "Front-end development"],
-    contribution: 100,
-    technologies: [
-      { Git: git },
-
-      { Figma: figmaIcon },
-      { React: reactIcon },
-      { JavaScript: javaScriptIcon },
-      { MUI: mui },
-      { HTML: htmlIcon },
-      { CSS: cssIcon },
-    ],
-  },
   {
     title: "Millionaire Cats Club",
     macFrame: mmcMac,
@@ -231,7 +209,7 @@ export const ProjectsImages = [
   },
   {
     title: "V3 Construction",
-    // link: "https://cabanasupporter.ro/",
+    link: "https://v3construction.co.uk/",
     macFrame: constructionMac,
     phoneFrame: constructionPhone,
     contribution: 95,
