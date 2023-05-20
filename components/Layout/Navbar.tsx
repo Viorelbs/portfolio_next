@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import avatarImg from "../../public/assets/images/avatar.webp";
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { RiMenu2Line } from "react-icons/ri";
 import useWidth from "@/hooks/useWidth";
 import { Drawer } from "@material-tailwind/react";
@@ -31,6 +31,9 @@ export default function Navbar() {
       <div className="flex space-x-2">
         <Link target="_blank" href="mailto:bviorel54@gmail.com">
           <AiOutlineMail className="text-white hover:text-primary text-lg w-5 h-5" />
+        </Link>
+        <Link target="_blank" href="https://github.com/ViorelMG5">
+          <AiFillGithub className="text-white hover:text-primary w-5 h-5" />
         </Link>
         <Link
           target="_blank"
