@@ -20,6 +20,9 @@ import graphql from "../public/assets/svg_icons/GraphQL_Logo.svg.png";
 import jquery from "../public/assets/svg_icons/jquery-ar21.svg";
 
 // Pages import
+import epvMac from "../public/assets/images/epv/epvLaptop.png";
+import epvPhone from "../public/assets/images/epv/epvphone.png";
+
 import castingMac from "../public/assets/images/casting/CastingMac.webp";
 import castingPhone from "../public/assets/images/casting/CastingPhone.webp";
 
@@ -44,17 +47,40 @@ import constructionPhone from "../public/assets/images/v3Construction/constructi
 import netflixMac from "../public/assets/images/netflix/netflixDesktop.webp";
 import netflixMobile from "../public/assets/images/netflix/NetflixMobile.webp";
 
-import instaMac from "../public/assets/images/insta/instaDesktop.webp";
-import instaMobile from "../public/assets/images/insta/instaMobile.webp";
-
 export const ProjectsImages = [
+  {
+    macFrame: epvMac,
+    phoneFrame: epvPhone,
+    personalProject: true,
+    title: "EPV Infinity",
+    link: "https://www.epvinfinity.ro/",
+    roles: ["Front-end development"],
+    contribution: 100,
+    gitLink: "https://github.com/ViorelMG5/epv-frontend",
+    description:
+      "When you create an account it's gonna ask you for card details, just use a test card (ex:  4242 4242 4242 4242). Stripe is on test mode",
+    technologies: [
+      { Git: git },
+      { TypeScript: tsIcon },
+      { React: reactIcon },
+      { NextJS: nextIcon },
+      { JavaScript: javaScriptIcon },
+      { Redux: reduxIcon },
+      { TailwindCSS: tailwind },
+      { MUI: mui },
+      { Strapi: strapi },
+      { Stripe: stripeIcon },
+      { HTML: htmlIcon },
+      { CSS: cssIcon },
+    ],
+  },
   {
     macFrame: netflixMac,
     phoneFrame: netflixMobile,
     personalProject: true,
     title: "Netflix Clone",
     link: "https://netflix-tau-seven.vercel.app/",
-    roles: ["Front-end development"],
+    roles: ["Ux/ui design", "Front-end development"],
     contribution: 100,
     gitLink: "https://github.com/ViorelMG5/netflix",
     description:
@@ -63,32 +89,6 @@ export const ProjectsImages = [
       { Git: git },
       { Firebase: firebaseIcon },
       { Stripe: stripeIcon },
-      { TypeScript: tsIcon },
-      { React: reactIcon },
-      { NextJS: nextIcon },
-      { JavaScript: javaScriptIcon },
-      { Recoil: recoil },
-      { TailwindCSS: tailwind },
-      { MUI: mui },
-      { HTML: htmlIcon },
-      { CSS: cssIcon },
-    ],
-  },
-  {
-    macFrame: instaMac,
-    phoneFrame: instaMobile,
-    personalProject: true,
-
-    title: "Instagram Clone",
-    link: "https://instagram-clone-beta-red.vercel.app/",
-    roles: ["Front-end development"],
-    contribution: 100,
-    gitLink: "https://github.com/ViorelMG5/instagram_clone",
-    description:
-      "IN PROGRESS || Functionalities: Dark/light mode, Create user using email/password or facebook login, Custom username and profile picture,  Add posts, Add comments to posts,Like comments,  Like the posts,Getting recomandation to follow,  See own profile (See followers and following nr). Working on other features, will update it soon! ",
-    technologies: [
-      { Git: git },
-      { Firebase: firebaseIcon },
       { TypeScript: tsIcon },
       { React: reactIcon },
       { NextJS: nextIcon },
