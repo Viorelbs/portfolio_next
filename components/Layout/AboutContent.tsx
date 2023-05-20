@@ -11,7 +11,7 @@ export default function AboutContent() {
       </h3>
       <p className="font-normal text-lg text-gray-500 max-w-[1000px]">
         with 2 years of experience, on a mission to create beautiful and
-        user-friendly experiences. I work with React,NextJs,JavaScript,
+        user-friendly experiences. I work with React, NextJs, JavaScript,
         TypeScript, CSS, HTML. Let's make your website shine!
       </p>
       <div className="flex gap-4 flex-wrap mt-6">

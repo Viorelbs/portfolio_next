@@ -59,7 +59,7 @@ export const ProjectsImages = [
     phoneFrame: epvPhone,
     title: "EPV Infinity",
     link: "https://www.epvinfinity.ro/",
-    roles: ["Front-end development"],
+    roles: ["Ux/ui design", "Front-end development"],
     contribution: 100,
     gitLink: "https://github.com/ViorelMG5/epv-frontend",
     technologies: [
