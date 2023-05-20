@@ -22,7 +22,7 @@ export default function Home() {
         <meta
           name="description"
           content="I'm a web developer and UI/UX designer
-          with 2 years of experience, on a mission to create beautiful and user-friendly experiences. I work with React,NextJs,JavaScript, TypeScript, CSS, HTML. Let's make your website shine!"
+          with 2 years of experience, on a mission to create beautiful and user-friendly experiences. I work with React, NextJs, JavaScript, TypeScript, CSS, HTML. Let's make your website shine!"
         />
         <meta
           name="keywords"
