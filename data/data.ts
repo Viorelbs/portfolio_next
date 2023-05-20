@@ -41,6 +41,9 @@ import cabanaPhone from "../public/assets/images/cabana/cabanaPhone.webp";
 import mmcMac from "../public/assets/images/Mmc/mmcMac.webp";
 import mmcPhone from "../public/assets/images/Mmc/mmcPhone.webp";
 
+import principalMac from "../public/assets/images/principal/macframe.png";
+import principalPhone from "../public/assets/images/principal/phoneframe.png";
+
 import constructionMac from "../public/assets/images/v3Construction/constructionMac.webp";
 import constructionPhone from "../public/assets/images/v3Construction/constructionPhone.webp";
 
@@ -51,7 +54,6 @@ export const ProjectsImages = [
   {
     macFrame: epvMac,
     phoneFrame: epvPhone,
-    personalProject: true,
     title: "EPV Infinity",
     link: "https://www.epvinfinity.ro/",
     roles: ["Front-end development"],
@@ -172,6 +174,22 @@ export const ProjectsImages = [
     ],
   },
 
+  {
+    title: "Principal Auto",
+    macFrame: principalMac,
+    phoneFrame: principalPhone,
+    link: "https://principalauto.ro/",
+    roles: ["Front-end development"],
+    contribution: 60,
+    technologies: [
+      { JavaScript: javaScriptIcon },
+      { jQuery: jquery },
+      { PHP: phpIcon },
+      { Boostrap: bootstrap },
+      { HTML: htmlIcon },
+      { CSS: cssIcon },
+    ],
+  },
   {
     title: "Millionaire Cats Club",
     macFrame: mmcMac,
