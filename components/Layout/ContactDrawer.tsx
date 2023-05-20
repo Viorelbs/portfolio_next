@@ -12,7 +12,6 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Loader from "../Common/Loader";
 import sendContactForm from "@/lib/api";
 import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
 
 // Importing modal for confirmation after email is sent
 const DynamicModal = dynamic(() => import("../Layout/ConfirmModal"), {
@@ -76,38 +75,22 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
 
   return (
     <>
-      <motion.div
-        variants={{
-          initial: {
-            y: 200,
-          },
-          normal: {
-            y: 0,
-          },
-        }}
-        initial="initial"
-        animate="normal"
-        transition={{
-          duration: 0.5,
-        }}
-      >
-        {buttonType === "primary" ? (
-          <button
-            onClick={openDrawer}
-            className="flex items-center text-lg gap-2 text-primary mt-2 group font-semibold"
-          >
-            Contact Me
-            <BsArrowRightShort className="w-5 h-5 relative left-0 group-hover:left-2 transition-all duration-300" />
-          </button>
-        ) : (
-          <button
-            onClick={openDrawer}
-            className=" py-3 px-5 rounded-xl text-black text-sm gap-2 font-medium bg-primary normal-case	tracking-widest fixed right-[2vw] top-[5vh] z-10 hover:bg-orange-700 "
-          >
-            Contact Me
-          </button>
-        )}
-      </motion.div>{" "}
+      {buttonType === "primary" ? (
+        <button
+          onClick={openDrawer}
+          className="flex items-center text-lg gap-2 text-primary mt-2 group font-semibold"
+        >
+          Contact Me
+          <BsArrowRightShort className="w-5 h-5 relative left-0 group-hover:left-2 transition-all duration-300" />
+        </button>
+      ) : (
+        <button
+          onClick={openDrawer}
+          className=" py-3 px-5 rounded-xl text-black text-sm gap-2 font-medium bg-primary normal-case	tracking-widest fixed right-[2vw] top-[5vh] z-10 hover:bg-orange-700 "
+        >
+          Contact Me
+        </button>
+      )}
       <Drawer
         open={open}
         onClose={closeDrawer}
@@ -157,7 +140,7 @@ export function ContactDrawer({ buttonType }: { buttonType: string }) {
             </label>
           </div>
 
-          <Button type="submit" disabled={isLoading}>
+          <Button type="submit" color="deep-orange" disabled={isLoading}>
             {" "}
             {isLoading ? <Loader size={5} /> : "Send Message"}
           </Button>
