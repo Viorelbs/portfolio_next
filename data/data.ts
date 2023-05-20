@@ -50,6 +50,9 @@ import constructionPhone from "../public/assets/images/v3Construction/constructi
 import netflixMac from "../public/assets/images/netflix/netflixDesktop.webp";
 import netflixMobile from "../public/assets/images/netflix/NetflixMobile.webp";
 
+import anisiaMac from "../public/assets/images/anisia/anisiaMac.png";
+import anisiaPhone from "../public/assets/images/anisia/anisiaPhone.png";
+
 export const ProjectsImages = [
   {
     macFrame: epvMac,
@@ -179,6 +182,22 @@ export const ProjectsImages = [
     macFrame: principalMac,
     phoneFrame: principalPhone,
     link: "https://principalauto.ro/",
+    roles: ["Front-end development"],
+    contribution: 60,
+    technologies: [
+      { JavaScript: javaScriptIcon },
+      { jQuery: jquery },
+      { PHP: phpIcon },
+      { Boostrap: bootstrap },
+      { HTML: htmlIcon },
+      { CSS: cssIcon },
+    ],
+  },
+  {
+    title: "Anisia Clinic",
+    macFrame: anisiaMac,
+    phoneFrame: anisiaPhone,
+    link: "https://anisiaclinic.ro/",
     roles: ["Front-end development"],
     contribution: 60,
     technologies: [
