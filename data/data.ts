@@ -57,8 +57,6 @@ export const ProjectsImages = [
     roles: ["Front-end development"],
     contribution: 100,
     gitLink: "https://github.com/ViorelMG5/epv-frontend",
-    description:
-      "When you create an account it's gonna ask you for card details, just use a test card (ex:  4242 4242 4242 4242). Stripe is on test mode",
     technologies: [
       { Git: git },
       { TypeScript: tsIcon },
