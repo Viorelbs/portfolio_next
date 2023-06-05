@@ -63,7 +63,7 @@ export const ProjectsImages = [
     contribution: 100,
     gitLink: "https://github.com/ViorelMG5/epv-frontend",
     technologies: [
-      { Git: git },
+      { Github: git },
       { TypeScript: tsIcon },
       { React: reactIcon },
       { NextJS: nextIcon },
@@ -89,7 +89,7 @@ export const ProjectsImages = [
     description:
       "When you create an account it's gonna ask you for card details, just use a test card (ex:  4242 4242 4242 4242). Stripe is on test mode",
     technologies: [
-      { Git: git },
+      { Github: git },
       { Firebase: firebaseIcon },
       { Stripe: stripeIcon },
       { TypeScript: tsIcon },
@@ -113,7 +113,7 @@ export const ProjectsImages = [
 
     contribution: 100,
     technologies: [
-      { Git: git },
+      { Github: git },
       { TailwindCSS: tailwind },
       { React: reactIcon },
       { NextJS: nextIcon },
@@ -150,7 +150,7 @@ export const ProjectsImages = [
     roles: ["Ux/ui design", "Front-end development"],
     contribution: 100,
     technologies: [
-      { Git: git },
+      { Github: git },
 
       { React: reactIcon },
       { JavaScript: javaScriptIcon },
@@ -298,7 +298,7 @@ export const logos = [
     Stripe: stripeIcon,
   },
   {
-    Git: git,
+    Github: git,
   },
   {
     Redux: reduxIcon,
