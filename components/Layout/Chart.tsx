@@ -34,7 +34,7 @@ export default function Chart() {
 
       series: [
         {
-          data: [68, 54, 74, 58, 84, 87, 90, 100],
+          data: [80, 70, 85, 70, 84, 84, 80],
           type: "bar",
           largeThreshold: 300,
         },
